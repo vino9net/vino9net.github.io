@@ -1,0 +1,14 @@
+<header class="site-header">
+   <h4>[{{site.author}}@{{ site.url | escape }} ~/{% if page.title %}
+        {{ page.title | escape }} 
+     {% else %}
+        {{ site.title | escape }}
+    {% endif %}
+    ]$
+   </h4>
+   <div style="display:inline; float: right;padding-right: 5px;">
+       <a href="/">./~ </a>|
+       <a href="/ls/">./ls -la</a>|
+       <a href="/about/">./whois</a>|
+   </div>
+</header>
