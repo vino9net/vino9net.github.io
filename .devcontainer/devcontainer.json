@@ -1,0 +1,23 @@
+{
+    "name": "ruby-3.1",
+    "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "yzhang.markdown-all-in-one"
+            ],
+            "settings": {
+                "ruby.interpreter.commandPath": "/usr/bin/ruby"
+            }
+        }
+    },
+    "features": {
+        "ruby": {
+            "version": "3.1"
+        },
+    },
+    "remoteUser": "vscode",
+    "forwardPorts": [],
+    "postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder} && bash ./.devcontainer/post_create.sh",
+    "postStartCommand": "bash ./.devcontainer/post_start.sh",
+}
