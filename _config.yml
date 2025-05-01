@@ -1,9 +1,9 @@
 title: vino9
-email: lee@vino9.org
+email: lee@vino9.net
 description: >- # this means to ignore newlines until "baseurl:"
   vino9 site
-baseurl: "" 
-url: "www.vino9.org" 
+baseurl: ""
+url: "www.vino9.net"
 author: lee
 
 # Build settings
