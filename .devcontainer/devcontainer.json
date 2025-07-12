@@ -1,6 +1,6 @@
 {
     "name": "ruby-3.1",
-    "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+    "image": "mcr.microsoft.com/devcontainers/ruby:3.1",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -9,11 +9,6 @@
             "settings": {
                 "ruby.interpreter.commandPath": "/usr/bin/ruby"
             }
-        }
-    },
-    "features": {
-        "ruby": {
-            "version": "3.1"
         }
     },
     "remoteUser": "vscode",
