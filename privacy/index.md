@@ -1,15 +1,13 @@
 ---
 layout: page
-title: Sightly AI Privacy Policy
+title: Vino Labs Privacy Policy
 permalink: /privacy/
 ---
 
 _Last updated: 2026-04-24_
 
-Sightly AI ("the app") is a tourist-aid application that uses the camera,
-microphone, and location sensors on your device to help you understand the
-places around you — museums, historical sites, churches, restaurants, and
-street scenes — and to translate menus and signs. This document describes
+Sightly AI ("the app") developed by Vino Labs is a tourist-aid application 
+that uses the camera, microphone, and location sensors on your device to help you understand the places around you — museums, historical sites, churches, restaurants, and street scenes — and to translate menus and signs. This document describes
 what data the app collects, how it is used, and which third-party services
 receive it.
 
