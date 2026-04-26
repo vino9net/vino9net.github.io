@@ -1,4 +1,8 @@
-# Sightly AI Privacy Policy
+---
+layout: page
+title: Sightly AI Privacy Policy
+permalink: /privacy/
+---
 
 _Last updated: 2026-04-24_
 
