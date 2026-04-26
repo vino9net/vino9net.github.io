@@ -1,18 +1,16 @@
 {
-    "name": "ruby-3.1",
-    "image": "mcr.microsoft.com/devcontainers/ruby:3.1",
+    "name": "node-22",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
     "customizations": {
         "vscode": {
             "extensions": [
+                "astro-build.astro-vscode",
                 "yzhang.markdown-all-in-one"
-            ],
-            "settings": {
-                "ruby.interpreter.commandPath": "/usr/bin/ruby"
-            }
+            ]
         }
     },
-    "remoteUser": "vscode",
-    "forwardPorts": [],
+    "remoteUser": "node",
+    "forwardPorts": [4321],
     "postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder} && bash ./.devcontainer/post_create.sh",
     "postStartCommand": "bash ./.devcontainer/post_start.sh"
 }

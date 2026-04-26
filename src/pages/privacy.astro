@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Vino Labs Privacy Policy">
+  <div class="page">
+    <h1>Vino Labs Privacy Policy</h1>
+
+    <p><em>Last updated: 2026-04-24</em></p>
+
+    <p>
+      Sightly AI ("the app") developed by Vino Labs is a tourist-aid application
+      that uses the camera, microphone, and location sensors on your device to help
+      you understand the places around you — museums, historical sites, churches,
+      restaurants, and street scenes — and to translate menus and signs. This
+      document describes what data the app collects, how it is used, and which
+      third-party services receive it.
+    </p>
+
+    <h2>Who operates the app</h2>
+    <p>
+      The app is developed and operated by an independent developer. For privacy
+      questions or data-deletion requests, contact:
+      <strong>guru.lin@gmail.com</strong>.
+    </p>
+
+    <h2>What the app collects and why</h2>
+    <ul>
+      <li>
+        <strong>Location (latitude, longitude).</strong> Collected via Google Play
+        Services (FusedLocationProvider) only while the app is in the foreground
+        and only when you take a photo. Used to find nearby points of interest.
+        Never written to permanent storage on our servers.
+      </li>
+      <li>
+        <strong>Camera frames.</strong> The image you capture is processed
+        on-device by Google's Gemini Nano model (via Android ML Kit GenAI) to
+        classify the scene. A compressed version may be sent to Google's Gemini
+        Flash/Pro model (via Firebase AI Logic) for deeper answers you explicitly
+        request. Photos are not retained after the request completes.
+      </li>
+      <li>
+        <strong>Microphone audio.</strong> Captured only when you activate voice
+        chat. Processed by the same Gemini models as camera frames. Not retained.
+      </li>
+      <li>
+        <strong>Anonymous account identifier.</strong> Firebase Authentication
+        issues a randomly generated anonymous user ID on first launch, used to
+        apply per-user rate limits and to scope any saved preferences. It is not
+        linked to your name, email, or device identifier.
+      </li>
+      <li>
+        <strong>Crash and diagnostic data.</strong> Firebase Crashlytics collects
+        stack traces, device model, OS version, and app version when the app
+        crashes, so we can fix bugs. No user content is included.
+      </li>
+      <li>
+        <strong>Push notification token.</strong> Firebase Cloud Messaging issues
+        a device token used only to deliver in-app notifications you have opted
+        into.
+      </li>
+    </ul>
+
+    <p>
+      The app does <strong>not</strong> collect your name, phone number, email
+      address, contacts, photo library, SMS, call log, or advertising ID.
+    </p>
+
+    <h2>Third-party services</h2>
+    <p>
+      The app shares the minimum data required with the following services. Each
+      has its own privacy policy that also governs your data.
+    </p>
+    <ul>
+      <li>
+        <strong>AMAP (高德地图)</strong> — when your device is in mainland China,
+        the app sends your current latitude and longitude to AMAP's POI search API
+        to find nearby places. See
+        <a href="https://lbs.amap.com/pages/privacy/">https://lbs.amap.com/pages/privacy/</a>.
+      </li>
+      <li>
+        <strong>Google Places API</strong> — outside mainland China, the same
+        latitude and longitude is sent to Google Places instead. See
+        <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.
+      </li>
+      <li>
+        <strong>Firebase (Google)</strong> — used for anonymous authentication,
+        crash reporting, push messaging, and cloud AI inference. See
+        <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.
+      </li>
+      <li>
+        <strong>Google ML Kit / Gemini Nano</strong> — runs entirely on your
+        device; no data leaves the device for this path.
+      </li>
+    </ul>
+
+    <h2>Data retention</h2>
+    <ul>
+      <li>
+        Location coordinates are used in-memory for the duration of one POI lookup
+        and then discarded.
+      </li>
+      <li>
+        Camera and microphone content is used in-memory for the duration of one
+        analysis and then discarded.
+      </li>
+      <li>
+        Crashlytics diagnostic records are retained by Google for up to 90 days,
+        per Firebase defaults.
+      </li>
+    </ul>
+
+    <h2>Your rights</h2>
+    <p>You may at any time:</p>
+    <ul>
+      <li>
+        Revoke camera, microphone, or location permission from Android Settings.
+        The corresponding features will stop working but the app will continue to
+        run.
+      </li>
+      <li>
+        Uninstall the app to delete its local preferences and the anonymous user
+        ID.
+      </li>
+      <li>
+        Email <strong>guru.lin@gmail.com</strong> to request deletion of any data
+        associated with your anonymous user ID.
+      </li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>
+      The app is not directed at children under 13. We do not knowingly collect
+      data from children under 13.
+    </p>
+
+    <h2>Changes to this policy</h2>
+    <p>
+      Material changes will be announced in-app and reflected in the "Last
+      updated" date above.
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+</style>

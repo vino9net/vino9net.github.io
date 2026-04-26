@@ -1,1 +1,1 @@
-bundle install
+npm install
